@@ -1,0 +1,233 @@
+name	preRequs	Level	Time	Units	Unlocks
+steel-processing		Red Science	5	50	steel-plate, steel-chest, steel-axe
+military		Red Science	15	10	submachine-gun, shotgun, shotgun-shell
+military-2	military, steel-processing	Green Science	15	20	piercing-rounds-magazine, grenade, military-science-pack
+military-3	laser, military-2	Military Blue Science	30	100	poison-capsule, slowdown-capsule, combat-shotgun
+military-4	military-3	Military High Tech Science	45	150	piercing-shotgun-shell, cluster-grenade
+uranium-ammo	nuclear-power, military-4	Military High Tech Science	45	1000	uranium-rounds-magazine, uranium-cannon-shell, explosive-uranium-cannon-shell
+atomic-bomb	nuclear-power, military-4, rocketry	Production Military High Tech Science	45	5000	atomic-bomb
+grenade-damage-1	military-2	Military Green Science	30	50	
+grenade-damage-2	grenade-damage-1	Military Green Science	45	100	
+grenade-damage-3	grenade-damage-2	Military Green Science	45	150	
+grenade-damage-4	grenade-damage-3	Military Blue Science	45	300	
+grenade-damage-5	grenade-damage-4	Military Blue Science	45	600	
+grenade-damage-6	grenade-damage-5	Military High Tech Science	45	1000	
+grenade-damage-7	grenade-damage-6	Military Space Science	45	2^(L-6)*1000	
+automation		Red Science	10	10	assembling-machine-1, long-handed-inserter
+electronics	automation	Red Science	15	30	filter-inserter
+automation-2	electronics	Red Science	5	80	assembling-machine-2
+automation-3	speed-module, automation-2	Production Blue Science	60	150	assembling-machine-3
+explosives	sulfur-processing	Military Green Science	15	100	explosives
+cliff-explosives	explosives	Green Science	15	200	cliff-explosives
+flammables	oil-processing	Green Science	30	50	
+land-mine	explosives, military-2	Military Green Science	30	100	land-mine
+flamethrower	flammables, military-2	Military Green Science	30	50	flamethrower, flamethrower-ammo, flamethrower-turret
+circuit-network	electronics	Green Science	15	100	red-wire, green-wire, arithmetic-combinator, decider-combinator, constant-combinator, power-switch, programmable-speaker
+advanced-electronics	electronics, plastics	Green Science	15	200	advanced-circuit, science-pack-3
+advanced-electronics-2	advanced-electronics	Blue Science	30	300	processing-unit, high-tech-science-pack
+logistics		Red Science	15	20	underground-belt, fast-inserter, splitter
+railway	logistics-2, engine	Green Science	30	75	rail, locomotive, cargo-wagon
+fluid-wagon	railway, fluid-handling	Green Science	30	200	fluid-wagon
+automated-rail-transportation	railway	Green Science	30	75	train-stop
+rail-signals	automated-rail-transportation	Green Science	30	100	rail-signal, rail-chain-signal
+braking-force-1	railway	Blue Science	30	100	
+braking-force-2	braking-force-1	Blue Science	30	200	
+braking-force-3	braking-force-2, logistics-3	Production Blue Science	30	250	
+braking-force-4	braking-force-3	Production Blue Science	30	350	
+braking-force-5	braking-force-4	Production Blue Science	35	450	
+braking-force-6	braking-force-5	Production High Tech Science	45	550	
+braking-force-7	braking-force-6	Production High Tech Science	60	650	
+automobilism	logistics-2, engine	Green Science	30	100	car
+tanks	automobilism, military-3	Military Blue Science	30	75	tank, cannon-shell, explosive-cannon-shell
+logistics-2	logistics	Green Science	30	200	fast-transport-belt, fast-underground-belt, fast-splitter
+logistics-3	logistics-2, automation-3	Production Blue Science	15	300	express-transport-belt, express-underground-belt, express-splitter
+optics		Red Science	15	10	small-lamp
+solar-energy	optics, electronics, steel-processing	Green Science	30	250	solar-panel
+laser	optics, advanced-electronics	Green Science	30	150	
+rocketry	electronics, flammables, explosives, military-2	Military Green Science	15	120	rocket-launcher, rocket
+explosive-rocketry	rocketry, military-3	Military Blue Science	30	100	explosive-rocket
+heavy-armor	military, steel-processing	Red Science	30	30	heavy-armor
+modular-armor	heavy-armor, modules	Green Science	30	100	modular-armor
+power-armor	modular-armor, electric-engine	Blue Science	30	200	power-armor
+power-armor-2	power-armor, speed-module-3, effectivity-module-3	Military High Tech Science	30	400	power-armor-mk2
+turrets		Red Science	10	10	gun-turret
+laser-turrets	turrets, laser, battery, military-2	Military Green Science	30	200	laser-turret
+stone-walls		Red Science	10	10	stone-wall
+gates	stone-walls, military-2	Green Science	30	100	gate
+flying	electric-engine	Green Science	30	200	
+robotics	electric-engine, battery	Green Science	30	150	flying-robot-frame
+rocket-silo	advanced-electronics-2, rocket-speed-5, speed-module-3, productivity-module-3	Production Military High Tech Science	60	1000	rocket-silo, low-density-structure, rocket-fuel, rocket-control-unit, rocket-part, satellite
+research-speed-1	electronics	Green Science	30	100	
+research-speed-2	research-speed-1	Green Science	30	200	
+research-speed-3	research-speed-2	Blue Science	30	250	
+research-speed-4	research-speed-3	Blue Science	30	500	
+research-speed-5	research-speed-4	Production Blue Science	30	500	
+research-speed-6	research-speed-5	Production High Tech Science	30	500	
+electric-energy-distribution-1	electronics, steel-processing	Green Science	30	120	medium-electric-pole, big-electric-pole
+electric-energy-distribution-2	electric-energy-distribution-1	Blue Science	45	100	substation
+electric-energy-accumulators-1	electric-energy-distribution-1, battery	Green Science	30	150	accumulator
+advanced-material-processing	steel-processing	Green Science	30	75	steel-furnace
+advanced-material-processing-2	advanced-material-processing, advanced-electronics	Blue Science	30	250	electric-furnace, production-science-pack
+concrete	advanced-material-processing	Green Science	30	250	concrete, hazard-concrete, refined-concrete, refined-hazard-concrete
+effect-transmission	modules, advanced-electronics-2	High Tech Science	30	75	beacon
+toolbelt		Green Science	30	100	
+engine	steel-processing, automation-2	Green Science	15	100	engine-unit, pump
+electric-engine	engine, advanced-electronics	Green Science	30	100	electric-engine-unit
+battery	sulfur-processing	Green Science	30	150	battery
+landfill		Green Science	30	50	landfill
+construction-robotics	robotics, flying	Green Science	30	100	roboport, logistic-chest-passive-provider, logistic-chest-storage, construction-robot
+logistic-robotics	robotics, flying	Green Science	30	150	roboport, logistic-chest-passive-provider, logistic-chest-storage, logistic-robot
+logistic-system	logistic-robotics	Production High Tech Science	30	150	logistic-chest-active-provider, logistic-chest-requester, logistic-chest-buffer
+worker-robots-speed-1	robotics	Blue Science	30	50	
+worker-robots-speed-2	worker-robots-speed-1	Blue Science	30	100	
+worker-robots-speed-3	worker-robots-speed-2	Production Blue Science	60	150	
+worker-robots-speed-4	worker-robots-speed-3	Production Blue Science	60	250	
+worker-robots-speed-5	worker-robots-speed-4	Production High Tech Science	60	500	
+worker-robots-speed-6	worker-robots-speed-5	Production Space Science	60	2^(L-6)*1000	
+worker-robots-storage-1	robotics	Blue Science	30	200	
+worker-robots-storage-2	worker-robots-storage-1	Production Blue Science	60	300	
+worker-robots-storage-3	worker-robots-storage-2	Production High Tech Science	60	450	
+character-logistic-slots-1	logistic-robotics	Green Science	30	100	
+character-logistic-slots-2	character-logistic-slots-1	Green Science	30	150	
+character-logistic-slots-3	character-logistic-slots-2	Blue Science	30	150	
+character-logistic-slots-4	character-logistic-slots-3	Production Blue Science	30	150	
+character-logistic-slots-5	character-logistic-slots-4	Production Blue Science	30	500	
+character-logistic-slots-6	character-logistic-slots-5	Production High Tech Science	30	1000	
+character-logistic-trash-slots-1	logistic-robotics	Green Science	30	100	
+character-logistic-trash-slots-2	character-logistic-trash-slots-1	Blue Science	30	100	
+auto-character-logistic-trash-slots	character-logistic-trash-slots-2	Blue Science	30	150	
+shotgun-shell-damage-1	military	Red Science	30	50	
+shotgun-shell-damage-2	shotgun-shell-damage-1	Green Science	30	100	
+shotgun-shell-damage-3	shotgun-shell-damage-2	Military Green Science	60	100	
+shotgun-shell-damage-4	shotgun-shell-damage-3	Military Green Science	60	200	
+shotgun-shell-damage-5	shotgun-shell-damage-4	Military Blue Science	60	200	
+shotgun-shell-damage-6	shotgun-shell-damage-5	Military High Tech Science	60	300	
+shotgun-shell-damage-7	shotgun-shell-damage-6	Military Space Science	60	2^(L-7)*1000	
+shotgun-shell-speed-1	military	Red Science	30	50	
+shotgun-shell-speed-2	shotgun-shell-speed-1	Green Science	30	100	
+shotgun-shell-speed-3	shotgun-shell-speed-2	Green Science	60	100	
+shotgun-shell-speed-4	shotgun-shell-speed-3	Military Green Science	60	200	
+shotgun-shell-speed-5	shotgun-shell-speed-4	Military Blue Science	60	200	
+shotgun-shell-speed-6	shotgun-shell-speed-5	Military High Tech Science	60	400	
+laser-turret-damage-1	laser-turrets	Military Green Science	30	50	
+laser-turret-damage-2	laser-turret-damage-1	Military Green Science	30	100	
+laser-turret-damage-3	laser-turret-damage-2	Military Blue Science	60	100	
+laser-turret-damage-4	laser-turret-damage-3	Military Blue Science	60	200	
+laser-turret-damage-5	laser-turret-damage-4	Military High Tech Science	60	200	
+laser-turret-damage-6	laser-turret-damage-5	Military High Tech Science	60	350	
+laser-turret-damage-7	laser-turret-damage-6	Military High Tech Science	60	500	
+laser-turret-damage-8	laser-turret-damage-7	Military Space Science	60	2^(L-8)*1000	
+laser-turret-speed-1	laser-turrets	Military Green Science	30	50	
+laser-turret-speed-2	laser-turret-speed-1	Military Green Science	30	100	
+laser-turret-speed-3	laser-turret-speed-2	Military Blue Science	60	200	
+laser-turret-speed-4	laser-turret-speed-3	Military Blue Science	60	200	
+laser-turret-speed-5	laser-turret-speed-4	Military High Tech Science	60	200	
+laser-turret-speed-6	laser-turret-speed-5	Military High Tech Science	60	350	
+laser-turret-speed-7	laser-turret-speed-6	Military High Tech Science	60	450	
+gun-turret-damage-1	turrets	Green Science	30	50	
+gun-turret-damage-2	gun-turret-damage-1	Green Science	30	100	
+gun-turret-damage-3	gun-turret-damage-2	Military Green Science	60	100	
+gun-turret-damage-4	gun-turret-damage-3	Military Green Science	60	200	
+gun-turret-damage-5	gun-turret-damage-4	Military Blue Science	60	200	
+gun-turret-damage-6	gun-turret-damage-5	Military High Tech Science	60	300	
+gun-turret-damage-7	gun-turret-damage-6	Military Space Science	60	2^(L-7)*1000	
+flamethrower-damage-1	flamethrower	Military Green Science	45	100	
+flamethrower-damage-2	flamethrower-damage-1	Military Green Science	45	200	
+flamethrower-damage-3	flamethrower-damage-2	Military Blue Science	60	250	
+flamethrower-damage-4	flamethrower-damage-3	Military Blue Science	60	250	
+flamethrower-damage-5	flamethrower-damage-4	Military High Tech Science	60	400	
+flamethrower-damage-6	flamethrower-damage-5	Military High Tech Science	60	500	
+flamethrower-damage-7	flamethrower-damage-6	Military Space Science	60	2^(L-7)*1000	
+energy-shield-equipment	modular-armor	Military Green Science	15	150	energy-shield-equipment
+night-vision-equipment	modular-armor	Green Science	15	50	night-vision-equipment
+energy-shield-mk2-equipment	energy-shield-equipment	Military Blue Science	30	200	energy-shield-mk2-equipment
+battery-equipment	modular-armor, battery	Green Science	15	50	battery-equipment
+battery-mk2-equipment	battery-equipment	Blue Science	30	100	battery-mk2-equipment
+solar-panel-equipment	modular-armor	Green Science	15	100	solar-panel-equipment
+personal-laser-defense-equipment	modular-armor, laser-turrets	Military Blue Science	30	100	personal-laser-defense-equipment
+discharge-defense-equipment	modular-armor, laser-turrets	Military Blue Science	30	100	discharge-defense-equipment, discharge-defense-remote
+fusion-reactor-equipment	solar-panel-equipment	Military High Tech Science	30	200	fusion-reactor-equipment
+exoskeleton-equipment	solar-panel-equipment, electric-engine	Blue Science	30	50	exoskeleton-equipment
+personal-roboport-equipment	construction-robotics, solar-panel-equipment	Blue Science	30	50	personal-roboport-equipment
+personal-roboport-equipment-2	personal-roboport-equipment	High Tech Science	30	250	personal-roboport-mk2-equipment
+bullet-damage-1	military	Red Science	30	50	
+bullet-damage-2	bullet-damage-1	Green Science	30	100	
+bullet-damage-3	bullet-damage-2	Military Green Science	60	100	
+bullet-damage-4	bullet-damage-3	Military Green Science	60	200	
+bullet-damage-5	bullet-damage-4	Military Blue Science	60	200	
+bullet-damage-6	bullet-damage-5	Military High Tech Science	60	300	
+bullet-damage-7	bullet-damage-6	Military Space Science	60	2^(L-7)*1000	
+bullet-speed-1	military	Red Science	30	50	
+bullet-speed-2	bullet-speed-1	Green Science	30	100	
+bullet-speed-3	bullet-speed-2	Green Science	60	100	
+bullet-speed-4	bullet-speed-3	Military Green Science	60	200	
+bullet-speed-5	bullet-speed-4	Military Blue Science	60	200	
+bullet-speed-6	bullet-speed-5	Military High Tech Science	60	400	
+fluid-handling	steel-processing, automation-2	Red Science	30	100	storage-tank, empty-barrel
+oil-processing	steel-processing	Green Science	30	100	pumpjack, oil-refinery, chemical-plant, basic-oil-processing, solid-fuel-from-light-oil, solid-fuel-from-petroleum-gas, solid-fuel-from-heavy-oil, lubricant
+advanced-oil-processing	oil-processing	Blue Science	30	75	advanced-oil-processing, heavy-oil-cracking, light-oil-cracking
+coal-liquefaction	advanced-oil-processing	Production Blue Science	30	200	coal-liquefaction
+sulfur-processing	oil-processing	Green Science	30	150	sulfuric-acid, sulfur
+plastics	oil-processing	Green Science	30	200	plastic-bar
+modules	advanced-electronics	Green Science	30	100	
+speed-module	modules	Green Science	30	50	speed-module
+speed-module-2	speed-module	Blue Science	30	75	speed-module-2
+speed-module-3	speed-module-2	High Tech Science	60	300	speed-module-3
+productivity-module	modules	Green Science	30	50	productivity-module
+productivity-module-2	productivity-module	Blue Science	30	75	productivity-module-2
+productivity-module-3	productivity-module-2	Production Blue Science	60	300	productivity-module-3
+effectivity-module	modules	Green Science	30	50	effectivity-module
+effectivity-module-2	effectivity-module	Blue Science	30	75	effectivity-module-2
+effectivity-module-3	effectivity-module-2	High Tech Science	60	300	effectivity-module-3
+combat-robotics	military-2, flying	Military Green Science	30	150	defender-capsule
+combat-robotics-2	combat-robotics, military-3	Military Blue Science	30	200	distractor-capsule
+combat-robotics-3	military-4, combat-robotics-2, speed-module	Military High Tech Science	30	300	destroyer-capsule
+combat-robot-damage-1	combat-robotics	Military Green Science	30	100	
+combat-robot-damage-2	combat-robot-damage-1	Military Green Science	30	200	
+combat-robot-damage-3	combat-robot-damage-2	Military Blue Science	30	200	
+combat-robot-damage-4	combat-robot-damage-3	Military Blue Science	30	300	
+combat-robot-damage-5	combat-robot-damage-4	Military High Tech Science	30	300	
+combat-robot-damage-6	combat-robot-damage-5	Military Space Science	30	2^(L-6)*1000	
+rocket-damage-1	rocketry	Military Green Science	30	100	
+rocket-damage-2	rocket-damage-1	Military Green Science	30	200	
+rocket-damage-3	rocket-damage-2	Military Blue Science	60	200	
+rocket-damage-4	rocket-damage-3	Military Blue Science	60	200	
+rocket-damage-5	rocket-damage-4	Military Blue Science	60	300	
+rocket-damage-6	rocket-damage-5	Military High Tech Science	60	300	
+rocket-damage-7	rocket-damage-6	Military Space Science	60	2^(L-7)*1000	
+rocket-speed-1	rocketry	Military Green Science	30	100	
+rocket-speed-2	rocket-speed-1	Military Green Science	30	200	
+rocket-speed-3	rocket-speed-2	Military Blue Science	60	200	
+rocket-speed-4	rocket-speed-3	Military Blue Science	60	300	
+rocket-speed-5	rocket-speed-4	Military Blue Science	60	300	
+rocket-speed-6	rocket-speed-5	Military High Tech Science	60	300	
+rocket-speed-7	rocket-speed-6	Military High Tech Science	60	500	
+cannon-shell-damage-1	tanks	Military Blue Science	60	100	
+cannon-shell-damage-2	cannon-shell-damage-1	Military Blue Science	60	150	
+cannon-shell-damage-3	cannon-shell-damage-2	Military Blue Science	60	300	
+cannon-shell-damage-4	cannon-shell-damage-3	Military High Tech Science	60	300	
+cannon-shell-damage-5	cannon-shell-damage-4	Military High Tech Science	60	1000	
+cannon-shell-damage-6	cannon-shell-damage-5	Military Space Science	60	2^(L-5)*1000	
+cannon-shell-speed-1	tanks	Military Blue Science	60	100	
+cannon-shell-speed-2	cannon-shell-speed-1	Military Blue Science	60	150	
+cannon-shell-speed-3	cannon-shell-speed-2	Military Blue Science	60	300	
+cannon-shell-speed-4	cannon-shell-speed-3	Military High Tech Science	60	400	
+cannon-shell-speed-5	cannon-shell-speed-4	Military High Tech Science	60	1000	
+artillery-shell-range-1	artillery	Military Space Science	60	2^L*1000	
+artillery-shell-speed-1	artillery	Military Space Science	60	1000+3^(L-1)*1000	
+follower-robot-count-1	combat-robotics	Military Green Science	30	300	
+follower-robot-count-2	follower-robot-count-1	Military Green Science	30	400	
+follower-robot-count-3	follower-robot-count-2	Military Blue Science	30	500	
+follower-robot-count-4	follower-robot-count-3	Military Blue Science	30	600	
+follower-robot-count-5	follower-robot-count-4, combat-robotics-3	Military High Tech Science	30	800	
+follower-robot-count-6	follower-robot-count-5	Military High Tech Science	30	1000	
+follower-robot-count-7	follower-robot-count-6	Production Military Space Science	30	100(L-6)+900	
+nuclear-power	advanced-electronics, concrete	Blue Science	30	1000	nuclear-reactor, centrifuge, uranium-processing, uranium-fuel-cell, heat-exchanger, heat-pipe, steam-turbine
+kovarex-enrichment-process	nuclear-power	Production High Tech Science	30	1500	kovarex-enrichment-process, nuclear-fuel
+nuclear-fuel-reprocessing	nuclear-power	Production Blue Science	30	1500	nuclear-fuel-reprocessing
+mining-productivity-1	advanced-electronics	Green Science	60	100*L	
+mining-productivity-4	mining-productivity-1	Blue Science	60	100*L	
+mining-productivity-8	mining-productivity-4	Production Blue Science	60	100*L	
+mining-productivity-12	mining-productivity-8	Production High Tech Science	60	100*L	
+mining-productivity-16	mining-productivity-12	Production Space Science	60	100(L-1)	
+artillery	military-4	Military High Tech Science	30	2000	artillery-wagon, artillery-turret, artillery-shell, artillery-targeting-remote
